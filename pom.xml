@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mx.japs.portal</groupId>
+  <artifactId>syncope-overlay</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <description>Apache Syncope </description>
+  
+	<properties>
+        <syncope.version>1.2.5</syncope.version>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+  	<repositories>
+	  <repository>
+	    <id>ASF</id>
+	    <url>https://repository.apache.org/content/repositories/snapshots/</url>
+	    <snapshots>
+	      <enabled>true</enabled>
+	    </snapshots>
+	  </repository>
+	</repositories>
+  
+	<modules>
+		<module>syncope-core-overlay</module>
+		<module>syncope-console-overlay</module>
+	</modules>
+</project>
